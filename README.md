@@ -83,6 +83,16 @@ The admission enquiry form uses `ADMISSIONS_EMAIL` near the bottom of `assets/ap
 
 If the phone number or email changes, update it in the contact cards and footer in `index.html`, plus `ADMISSIONS_EMAIL` in `assets/app.js`.
 
+### Developer credit
+
+The footer includes a developer credit and support block:
+
+- Name: **Ahmed Omarali** — `Website by Ahmed Omarali` with a `DEVELOPER` tag
+- Email: **ahmedomarali03@gmail.com**
+- Phone / WhatsApp: **+255 774 031 316** (`tel:+255774031316`, `https://wa.me/255774031316`)
+
+Update the `.footer-dev` block in `index.html` if these details change. The WhatsApp link includes a ready-to-send message.
+
 ### Faculty, testimonials and news
 
 Replace the names, roles, quotes, dates and text directly in `index.html`. The faculty avatars currently use initials and CSS gradients; swap in `<img>` elements when staff photographs are available.
