@@ -73,14 +73,15 @@ Poppins is loaded locally from `assets/fonts/`. The display serif is the system 
 
 ### Phone, email and social links
 
-Search for these placeholders in `index.html`:
+The live details are used throughout the site:
 
-- `+255 777 000 000`
-- `admissions@zanplan.ac.tz`
-- `info@zanplan.ac.tz`
-- `href="#"` in the footer social links
+- Phone / WhatsApp: **+255 655 802 650** (`tel:+255655802650`, `https://wa.me/255655802650`)
+- Email: **zanplan26@gmail.com**
+- Instagram: **https://www.instagram.com/zan_plan_academy/**
 
-The admission enquiry form also uses `ADMISSIONS_EMAIL` near the bottom of `assets/app.js`. It opens the visitor's email app; connect a real backend if you want the form to submit server-side.
+The admission enquiry form uses `ADMISSIONS_EMAIL` near the bottom of `assets/app.js` (set to `zanplan26@gmail.com`). It opens the visitor's email app; connect a real backend if you want the form to submit server-side.
+
+If the phone number or email changes, update it in the contact cards and footer in `index.html`, plus `ADMISSIONS_EMAIL` in `assets/app.js`.
 
 ### Faculty, testimonials and news
 
@@ -126,7 +127,7 @@ The admission requirements and steps are in `#admissions-dialog` in `index.html`
 ## Notes
 
 - The form currently uses a `mailto:` fallback so the site works without a server. It is not a stored application form yet.
-- Social links are placeholders (`href="#"`).
+- Social links point to the official Instagram profile and WhatsApp number.
 - The stats, testimonials and faculty profiles are presentational placeholders and should be replaced with verified ZPA information.
 - No tracking, analytics or external scripts are included.
 

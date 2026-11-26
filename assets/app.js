@@ -346,7 +346,7 @@
      -------------------------------------------------------------------------- */
   const enquiryForm = $('#enquiry-form');
   const enquiryNote = $('#enquiry-note');
-  const ADMISSIONS_EMAIL = 'admissions@zanplan.ac.tz';
+  const ADMISSIONS_EMAIL = 'zanplan26@gmail.com';
 
   enquiryForm?.addEventListener('submit', (event) => {
     event.preventDefault();
