@@ -47,7 +47,7 @@ assets/fonts/              Poppins body font
 - Faculty/mentor cards
 - Student and parent testimonials
 - News/announcement cards with update dialogs
-- Campus gallery between News and Admissions, with a photo lightbox
+- Campus gallery between News and Admissions, with category filters, hover zoom and a full-screen lightbox (next/previous, keyboard arrows)
 - Admissions CTA and admission-information dialog
 - Contact cards and complete footer
 - Print-friendly, reduced-motion-friendly and keyboard-accessible interactions
@@ -111,13 +111,18 @@ Keep the same file names to avoid changing the HTML.
 
 ### Gallery
 
-The gallery sits between **News** and **Admissions** (`#gallery`). Each tile is a `<button>` in `.gallery-grid` with:
+The gallery sits between **News** and **Admissions** (`#gallery`). Each photo is a `<button class="gallery-card">` in `#gallery-grid` with:
 
-- an `<img>` for the thumbnail
-- `data-gallery-src` — the photo opened in the lightbox
+- `data-gallery-category` — `Campus`, `Academics` or `Student Life`; used by the filter pills
+- `data-gallery-src` — the full image opened in the lightbox
 - `data-gallery-title` and `data-gallery-caption` — the lightbox heading and description
+- an `<img>` thumbnail plus a `.gallery-gradient` overlay and `.gallery-text` caption
 
-The grid uses three columns on desktop and two on phones. The **first tile** spans two columns and two rows as the feature photo; the other eight fill the remaining cells evenly. To add a photo, duplicate a tile — keep the first tile as the feature and check that the remaining tiles fill the rows without gaps (add or remove tiles in pairs if needed).
+The filter buttons live in `.gallery-filters` (`data-gallery-filter`). To add a category, add a button and matching `data-gallery-category` values.
+
+The grid is three columns on desktop and two on phones. When "All" is active on phones, the first photo becomes a wide feature tile so the rows fill evenly; filtered views show normal cards.
+
+The lightbox is full-screen and supports **next/previous buttons, ← → keys, Escape to close** and a photo counter.
 
 ### Admission dialog
 

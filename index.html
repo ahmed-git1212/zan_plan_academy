@@ -489,53 +489,99 @@
         <div class="section-heading gallery-heading reveal">
           <p class="eyebrow"><span class="eyebrow-line"></span> Campus gallery</p>
           <h2>Life at ZPA, <br><span>in pictures.</span></h2>
-          <p>Classrooms, laboratories, teachers and everyday campus moments at Fuoni Migombani. Tap any photo to view it larger.</p>
+          <p>Classrooms, laboratories, teachers and everyday campus moments at Fuoni Migombani. Filter the gallery or tap any photo to view it full size.</p>
         </div>
 
-        <div class="gallery-grid reveal">
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-students-group.jpg" data-gallery-title="Form Five, 2026/2027" data-gallery-caption="Form Five students in front of the school vision and mission wall at Fuoni Migombani." aria-label="View larger photo: Form Five students at ZPA">
+        <div class="gallery-toolbar reveal">
+          <div class="gallery-filters" role="group" aria-label="Filter gallery photos">
+            <button class="gallery-filter is-active" type="button" data-gallery-filter="All" aria-pressed="true">All</button>
+            <button class="gallery-filter" type="button" data-gallery-filter="Campus" aria-pressed="false">Campus</button>
+            <button class="gallery-filter" type="button" data-gallery-filter="Academics" aria-pressed="false">Academics</button>
+            <button class="gallery-filter" type="button" data-gallery-filter="Student Life" aria-pressed="false">Student Life</button>
+          </div>
+          <p class="gallery-count" id="gallery-count" role="status" aria-live="polite">9 photos</p>
+        </div>
+
+        <div class="gallery-grid is-all reveal" id="gallery-grid">
+          <button class="gallery-card" type="button" data-gallery-category="Student Life" data-gallery-src="assets/images/gallery-students-group.jpg" data-gallery-title="Form Five, 2026/2027" data-gallery-caption="Form Five students in front of the school vision and mission wall at Fuoni Migombani." aria-label="View larger photo: Form Five students at ZPA">
             <img src="assets/images/gallery-students-group.jpg" alt="Form Five students standing in front of the school vision and mission wall" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Form Five, 2026/2027</strong><small>Students at ZPA</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Form Five, 2026/2027</strong>
+              <small>Students at ZPA</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-classroom.jpg" data-gallery-title="In class" data-gallery-caption="A teacher working through a lesson on the whiteboard while Form Five students follow along." aria-label="View larger photo: Lesson in progress">
+          <button class="gallery-card" type="button" data-gallery-category="Academics" data-gallery-src="assets/images/gallery-classroom.jpg" data-gallery-title="In class" data-gallery-caption="A teacher working through a lesson on the whiteboard while Form Five students follow along." aria-label="View larger photo: Lesson in progress">
             <img src="assets/images/gallery-classroom.jpg" alt="Teacher writing on a whiteboard during a Form Five lesson" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>In class</strong><small>Teaching &amp; learning</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>In class</strong>
+              <small>Teaching &amp; learning</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-campus-sign.jpg" data-gallery-title="Our campus" data-gallery-caption="The Zan Plan Academy signboard at Fuoni Migombani, P.O. Box 35." aria-label="View larger photo: ZPA campus signboard">
+          <button class="gallery-card" type="button" data-gallery-category="Campus" data-gallery-src="assets/images/gallery-campus-sign.jpg" data-gallery-title="Our campus" data-gallery-caption="The Zan Plan Academy signboard at Fuoni Migombani, P.O. Box 35." aria-label="View larger photo: ZPA campus signboard">
             <img src="assets/images/gallery-campus-sign.jpg" alt="Zan Plan Academy signboard at Fuoni Migombani" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Our campus</strong><small>Fuoni Migombani</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Our campus</strong>
+              <small>Fuoni Migombani</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-science-books.jpg" data-gallery-title="Science textbooks" data-gallery-caption="Form Five learners with their Chemistry, Biology and Physics textbooks." aria-label="View larger photo: Students with science textbooks">
+          <button class="gallery-card" type="button" data-gallery-category="Academics" data-gallery-src="assets/images/gallery-science-books.jpg" data-gallery-title="Science textbooks" data-gallery-caption="Form Five learners with their Chemistry, Biology and Physics textbooks." aria-label="View larger photo: Students with science textbooks">
             <img src="assets/images/gallery-science-books.jpg" alt="Three students holding Chemistry, Biology and Physics textbooks" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Science textbooks</strong><small>Physics · Chemistry · Biology</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Science textbooks</strong>
+              <small>Physics · Chemistry · Biology</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-physics-practical.jpg" data-gallery-title="Physics practical" data-gallery-caption="Students measuring voltage during an Advanced Physics practical session." aria-label="View larger photo: Physics practical session">
+          <button class="gallery-card" type="button" data-gallery-category="Academics" data-gallery-src="assets/images/gallery-physics-practical.jpg" data-gallery-title="Physics practical" data-gallery-caption="Students measuring voltage during an Advanced Physics practical session." aria-label="View larger photo: Physics practical session">
             <img src="assets/images/gallery-physics-practical.jpg" alt="Teacher and two students working with a voltmeter in a Physics practical" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Physics practical</strong><small>Circuits &amp; measurement</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Physics practical</strong>
+              <small>Circuits &amp; measurement</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-computer-lab.jpg" data-gallery-title="Computer lab" data-gallery-caption="A learner working with a teacher in the computer lab." aria-label="View larger photo: Computer lab session">
+          <button class="gallery-card" type="button" data-gallery-category="Academics" data-gallery-src="assets/images/gallery-computer-lab.jpg" data-gallery-title="Computer lab" data-gallery-caption="A learner working with a teacher in the computer lab." aria-label="View larger photo: Computer lab session">
             <img src="assets/images/gallery-computer-lab.jpg" alt="Student and teacher at a computer in the school computer lab" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Computer lab</strong><small>Digital skills</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Computer lab</strong>
+              <small>Digital skills</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-faculty.jpg" data-gallery-title="Our teachers" data-gallery-caption="Zan Plan Academy faculty members at the Fuoni Migombani campus." aria-label="View larger photo: ZPA teachers">
+          <button class="gallery-card" type="button" data-gallery-category="Campus" data-gallery-src="assets/images/gallery-faculty.jpg" data-gallery-title="Our teachers" data-gallery-caption="Zan Plan Academy faculty members at the Fuoni Migombani campus." aria-label="View larger photo: ZPA teachers">
             <img src="assets/images/gallery-faculty.jpg" alt="Four Zan Plan Academy teachers standing together on campus" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Our teachers</strong><small>Faculty &amp; mentors</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Our teachers</strong>
+              <small>Faculty &amp; mentors</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-study.jpg" data-gallery-title="Focused study" data-gallery-caption="Form Five students taking notes during a lesson." aria-label="View larger photo: Students studying in class">
+          <button class="gallery-card" type="button" data-gallery-category="Student Life" data-gallery-src="assets/images/gallery-study.jpg" data-gallery-title="Focused study" data-gallery-caption="Form Five students taking notes during a lesson." aria-label="View larger photo: Students studying in class">
             <img src="assets/images/gallery-study.jpg" alt="Form Five students taking notes during a lesson" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Focused study</strong><small>Form Five classroom</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Focused study</strong>
+              <small>Form Five classroom</small>
+            </span>
           </button>
 
-          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-physics-students.jpg" data-gallery-title="Practical work" data-gallery-caption="Two students with their Physics apparatus during a laboratory session." aria-label="View larger photo: Students with Physics apparatus">
+          <button class="gallery-card" type="button" data-gallery-category="Academics" data-gallery-src="assets/images/gallery-physics-students.jpg" data-gallery-title="Practical work" data-gallery-caption="Two students with their Physics apparatus during a laboratory session." aria-label="View larger photo: Students with Physics apparatus">
             <img src="assets/images/gallery-physics-students.jpg" alt="Two students with Physics laboratory apparatus" width="1000" height="667" loading="lazy">
-            <span class="gallery-caption"><strong>Practical work</strong><small>Advanced Physics</small></span>
+            <span class="gallery-gradient" aria-hidden="true"></span>
+            <span class="gallery-text">
+              <strong>Practical work</strong>
+              <small>Advanced Physics</small>
+            </span>
           </button>
         </div>
       </div>
@@ -706,18 +752,26 @@
     </div>
   </dialog>
 
-  <dialog class="modal modal-gallery" id="gallery-dialog" aria-labelledby="gallery-title">
-    <div class="gallery-dialog-head">
-      <div>
-        <p class="eyebrow">Campus gallery</p>
-        <h2 id="gallery-title">Campus photo</h2>
+  <dialog class="gallery-lightbox" id="gallery-dialog" aria-labelledby="gallery-title">
+    <div class="lightbox-inner">
+      <div class="lightbox-stage">
+        <img id="gallery-image" src="assets/images/gallery-students-group.jpg" alt="">
+        <button class="lightbox-close" type="button" data-close-dialog aria-label="Close photo">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" type="button" data-gallery-prev aria-label="Previous photo">
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" type="button" data-gallery-next aria-label="Next photo">
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+        </button>
       </div>
-      <button class="icon-button" type="button" data-close-dialog aria-label="Close photo">
-        <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
-      </button>
+      <div class="lightbox-caption">
+        <p class="lightbox-counter" id="gallery-counter">1 / 9</p>
+        <h2 id="gallery-title">Campus photo</h2>
+        <p id="gallery-caption"></p>
+      </div>
     </div>
-    <img id="gallery-image" src="assets/images/gallery-students-group.jpg" alt="">
-    <p class="gallery-dialog-text" id="gallery-caption"></p>
   </dialog>
 
   <dialog class="modal" id="program-dialog" aria-labelledby="program-dialog-title">
