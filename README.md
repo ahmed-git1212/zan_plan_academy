@@ -29,7 +29,7 @@ assets/styles.css          Design tokens, layout, components and responsive rule
 assets/app.js              Mobile menu, search/filter, dialogs and scroll behaviour
 assets/images/zpa-logo.png ZPA circular crest (transparent)
 assets/images/students-hero.jpg / students-academic.jpg
-assets/images/gallery-*.jpg  Gallery photos (duo, books, female, male, crest)
+assets/images/gallery-*.jpg  Gallery photos (students, classrooms, laboratories, teachers, campus)
 assets/images/favicon.png
 assets/fonts/              Poppins body font
 ```
@@ -104,8 +104,7 @@ The supplied ZPA crest and student photographs are in `assets/images/`. The cres
 - `zpa-logo.png` for the crest
 - `students-hero.jpg` for the hero photo. On phones (760px and below) this image is also used as the hero background behind the headline, so the students are visible without scrolling; at wider sizes it shows inside the framed hero card.
 - `students-academic.jpg` for the About and campus sections
-- `gallery-duo.jpg`, `gallery-books.jpg`, `gallery-female.jpg`, `gallery-male.jpg` for the gallery tiles
-- `gallery-crest.jpg` for the close-up crest image (available if you want to add a fifth tile)
+- `gallery-students-group.jpg`, `gallery-classroom.jpg`, `gallery-campus-sign.jpg`, `gallery-science-books.jpg`, `gallery-physics-practical.jpg`, `gallery-computer-lab.jpg`, `gallery-faculty.jpg`, `gallery-study.jpg` and `gallery-physics-students.jpg` for the gallery tiles
 - `favicon.png` for the browser icon
 
 Keep the same file names to avoid changing the HTML.
@@ -118,7 +117,7 @@ The gallery sits between **News** and **Admissions** (`#gallery`). Each tile is 
 - `data-gallery-src` — the photo opened in the lightbox
 - `data-gallery-title` and `data-gallery-caption` — the lightbox heading and description
 
-The first tile spans two columns and two rows; the second spans two columns. To add a photo, duplicate a tile and keep the same pattern (the grid flows into further rows automatically).
+The grid uses three columns on desktop and two on phones. The **first tile** spans two columns and two rows as the feature photo; the other eight fill the remaining cells evenly. To add a photo, duplicate a tile — keep the first tile as the feature and check that the remaining tiles fill the rows without gaps (add or remove tiles in pairs if needed).
 
 ### Admission dialog
 
