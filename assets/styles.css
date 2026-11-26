@@ -612,6 +612,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (max-width: 760px) {
   .container { width: min(100% - 1.5rem, 620px); }
   .section { padding: 4.3rem 0; }
+  /* On phones the student photo becomes the hero backdrop so it is visible without scrolling. */
+  .hero {
+    background:
+      linear-gradient(180deg, rgba(251, 244, 231, 0.97) 0%, rgba(251, 244, 231, 0.9) 9%, rgba(251, 244, 231, 0.72) 22%, rgba(251, 244, 231, 0.8) 44%, rgba(251, 244, 231, 0.94) 62%, var(--cream) 80%),
+      url("images/students-hero.jpg") no-repeat center 22% / cover;
+  }
+  .hero-visual { display: none; }
   .header-inner { min-height: 70px; gap: 0.7rem; }
   .brand-crest { width: 48px; height: 48px; }
   .brand-copy strong { font-size: 0.8rem; }

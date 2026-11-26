@@ -99,7 +99,7 @@ Duplicate a card to add a subject. Update the displayed count in `#program-count
 The supplied ZPA crest and student photographs are in `assets/images/`. The crest has been masked to a transparent circle. Replace:
 
 - `zpa-logo.png` for the crest
-- `students-hero.jpg` for the hero card
+- `students-hero.jpg` for the hero photo. On phones (760px and below) this image is also used as the hero background behind the headline, so the students are visible without scrolling; at wider sizes it shows inside the framed hero card.
 - `students-academic.jpg` for the About and campus sections
 - `favicon.png` for the browser icon
 
