@@ -1,0 +1,160 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: en
+site_url: https://ahmed-git1212.github.io/zan_plan_academy/
+display_url: https://ahmed-git1212.github.io/zan_plan_academy/
+logo_url: https://ahmed-git1212.github.io/zan_plan_academy/assets/images/zpa-logo.png
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: settings
+    label: Contact & admissions
+    files:
+      - name: contact
+        label: Contact and admission information
+        file: content/settings.json
+        fields:
+          - { label: "Phone (shown)", name: phone_display, widget: string }
+          - { label: "Phone (dial link)", name: phone_number, widget: string, hint: "Include the country code, e.g. +255655802650" }
+          - { label: "WhatsApp number", name: whatsapp_number, widget: string, hint: "Digits only, e.g. 255655802650" }
+          - { label: "Email", name: email, widget: string }
+          - { label: "Instagram URL", name: instagram_url, widget: string, required: false }
+          - { label: "Campus / area", name: address, widget: string }
+          - { label: "P.O. Box", name: po_box, widget: string }
+          - { label: "City / country", name: city, widget: string }
+          - { label: "Office hours", name: office_hours, widget: string }
+          - { label: "WhatsApp pre-filled message", name: whatsapp_message, widget: text, required: false }
+          - label: "Admission requirements"
+            name: admission_requirements
+            widget: list
+            field: { label: Requirement, name: requirement, widget: string }
+          - label: "How to apply steps"
+            name: admission_steps
+            widget: list
+            field: { label: Step, name: step, widget: string }
+          - { label: "Developer email", name: developer_email, widget: string }
+          - { label: "Developer phone (shown)", name: developer_phone_display, widget: string }
+          - { label: "Developer phone (dial link)", name: developer_phone_number, widget: string }
+          - { label: "Developer WhatsApp number", name: developer_whatsapp_number, widget: string }
+          - { label: "Developer WhatsApp message", name: developer_whatsapp_message, widget: text, required: false }
+
+  - name: combinations
+    label: Form Five combinations
+    files:
+      - name: combinations
+        label: Combinations
+        file: content/combinations.json
+        fields:
+          - label: Combinations
+            name: items
+            widget: list
+            summary: "{{fields.code}} — {{fields.title}}"
+            fields:
+              - { label: Code, name: code, widget: string, hint: "e.g. PCM" }
+              - { label: Title, name: title, widget: string }
+              - label: Icon
+                name: icon
+                widget: select
+                options: [atom, flask, leaf, globe, book, calculator, laptop, languages, award, graduation]
+              - { label: Short description, name: description, widget: text }
+              - { label: Full details, name: details, widget: text }
+              - { label: Possible careers, name: careers, widget: string }
+              - { label: Core subjects, name: subjects, widget: string, hint: "e.g. Physics · Chemistry · Mathematics" }
+              - { label: Search keywords, name: keywords, widget: string, required: false }
+
+  - name: gallery
+    label: Campus gallery
+    files:
+      - name: gallery
+        label: Photos
+        file: content/gallery.json
+        fields:
+          - label: Photos
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Photo, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - label: Category
+                name: category
+                widget: select
+                options: [Campus, Academics, Student Life]
+              - { label: Description (lightbox), name: description, widget: text }
+              - { label: Alt text (accessibility), name: alt, widget: string, required: false }
+
+  - name: news
+    label: News & announcements
+    files:
+      - name: news
+        label: News items
+        file: content/news.json
+        fields:
+          - label: News items
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Date (shown), name: date, widget: string, hint: "e.g. 25 Nov 2026" }
+              - { label: Category, name: category, widget: string }
+              - label: Icon
+                name: icon
+                widget: select
+                options: [graduation, flask, award, calendar, book, users, sparkles]
+              - label: Card colour
+                name: theme
+                widget: select
+                options:
+                  - { label: Gold, value: a }
+                  - { label: Brown, value: b }
+                  - { label: Bronze, value: c }
+              - { label: Summary, name: summary, widget: text }
+              - { label: Full update, name: body, widget: text }
+
+  - name: faculty
+    label: Faculty & mentors
+    files:
+      - name: faculty
+        label: Faculty cards
+        file: content/faculty.json
+        fields:
+          - label: Faculty
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Initials, name: initials, widget: string, hint: "e.g. AH" }
+              - { label: Name, name: name, widget: string }
+              - { label: Subject / tag, name: subject, widget: string }
+              - { label: Description, name: description, widget: text }
+              - label: Avatar colour
+                name: avatar
+                widget: select
+                options:
+                  - { label: Brown, value: a }
+                  - { label: Taupe, value: b }
+                  - { label: Gold, value: c }
+                  - { label: Dark, value: d }
+
+  - name: testimonials
+    label: Testimonials
+    files:
+      - name: testimonials
+        label: Student & parent quotes
+        file: content/testimonials.json
+        fields:
+          - label: Testimonials
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Quote, name: quote, widget: text }
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Initials, name: initials, widget: string, hint: "e.g. AS" }

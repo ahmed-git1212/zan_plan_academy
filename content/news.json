@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "title": "Form Five admission for 2026/2027 is now open",
+      "date": "25 Nov 2026",
+      "category": "Admissions",
+      "icon": "graduation",
+      "theme": "a",
+      "summary": "Prospective students and families can collect admission information from the Fuoni Migombani campus.",
+      "body": "Zan Plan Academy is welcoming applications for Form Five in the 2026/2027 academic year. Visit the Fuoni Migombani campus for the admission pack, requirements and guidance on choosing a subject combination."
+    },
+    {
+      "title": "Science laboratories upgraded for practical learning",
+      "date": "18 Nov 2026",
+      "category": "Campus",
+      "icon": "flask",
+      "theme": "b",
+      "summary": "New equipment and refreshed workspaces are helping Form Five learners build confidence in the lab.",
+      "body": "Our Physics and Chemistry laboratories have been refreshed with additional practical equipment and improved storage. The upgrade gives Form Five learners more time for hands-on investigation and safer, better-organised experiments."
+    },
+    {
+      "title": "ZPA learners post strong mock examination results",
+      "date": "10 Nov 2026",
+      "category": "Achievement",
+      "icon": "award",
+      "theme": "c",
+      "summary": "Teachers celebrate improved performance across the science streams after a focused revision cycle.",
+      "body": "Learners across Form Five and Form Six showed strong progress in the latest mock examinations. The results reflect consistent revision, targeted feedback from teachers and a renewed focus on exam technique."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "phone_display": "+255 655 802 650",
+  "phone_number": "+255655802650",
+  "whatsapp_number": "255655802650",
+  "email": "zanplan26@gmail.com",
+  "instagram_url": "https://www.instagram.com/zan_plan_academy/",
+  "address": "Fuoni Migombani",
+  "po_box": "P.O. Box 35",
+  "city": "Zanzibar, Tanzania",
+  "office_hours": "Mon–Fri · 08:00–16:00",
+  "whatsapp_message": "Hello Zan Plan Academy, I would like to ask about Form Five admission.",
+  "admission_requirements": [
+    "Form Four (CSEE) results or provisional results",
+    "Relevant subject passes for your chosen combination",
+    "Birth certificate or student identification",
+    "Two recent passport-size photographs"
+  ],
+  "admission_steps": [
+    "Visit the Fuoni Migombani campus or call admissions.",
+    "Choose a subject combination with guidance from our team.",
+    "Submit your results and documents for review."
+  ],
+  "developer_email": "ahmedomarali03@gmail.com",
+  "developer_phone_display": "+255 774 031 316",
+  "developer_phone_number": "+255774031316",
+  "developer_whatsapp_number": "255774031316",
+  "developer_whatsapp_message": "Hello, I would like to get in touch about a website."
+}

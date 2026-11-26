@@ -27,6 +27,10 @@ You can also open `index.html` directly, though a local server is recommended fo
 index.html                 All sections, navigation and dialogs
 assets/styles.css          Design tokens, layout, components and responsive rules
 assets/app.js              Mobile menu, search/filter, dialogs and scroll behaviour
+assets/content.js          Loads editable JSON from content/ and renders the lists
+content/*.json             Editable site content (managed by the admin panel)
+admin/                     Decap CMS admin panel (index.html + config.yml)
+netlify.toml               Netlify publish directory and admin headers
 assets/images/zpa-logo.png ZPA circular crest (transparent)
 assets/images/students-hero.jpg / students-academic.jpg
 assets/images/gallery-*.jpg  Gallery photos (students, classrooms, laboratories, teachers, campus)
@@ -144,17 +148,40 @@ The admission requirements and steps are in `#admissions-dialog` in `index.html`
 - The stats, testimonials and faculty profiles are presentational placeholders and should be replaced with verified ZPA information.
 - No tracking, analytics or external scripts are included.
 
-## Planned: admin page
+## Admin panel (content editing)
 
-A future admin area should let the academy team update the site **without editing code**. Planned areas:
+The site has a ready-to-activate **Decap CMS** admin panel at `/admin`. Content is stored as JSON in `content/` and rendered by `assets/content.js`, so changes made in the admin appear without editing code.
 
-- Add, edit or hide Form Five combinations (currently PCM, PCB, CBG and PGM)
-- Update admission requirements, dates and contact details
-- Publish news items and announcements
-- Edit faculty profiles and testimonials
-- Choose which images appear in the hero and About sections
+Editable sections:
 
-Until that exists, content changes are made directly in `index.html` and `assets/app.js` as described above.
+- **Contact & admissions** — phone, WhatsApp, email, Instagram, address, hours, requirements and application steps
+- **Form Five combinations** — PCM, PCB, CBG, PGM and any new ones
+- **Campus gallery** — upload photos, set titles, captions and categories
+- **News & announcements** — add or edit updates
+- **Faculty & mentors** — names, subjects and descriptions
+- **Testimonials** — quotes, names and roles
+
+### Activate the admin (one-time setup, ~10 minutes)
+
+The admin uses Netlify Identity, so it must be hosted on Netlify (the site still deploys from the same GitHub repository and GitHub Pages keeps working too).
+
+1. Create a free account at [netlify.com](https://www.netlify.com) and choose **Add new site → Import an existing project**.
+2. Connect GitHub and select `ahmed-git1212/zan_plan_academy`.
+3. Build command: leave empty. Publish directory: `.` (already set in `netlify.toml`).
+4. After the first deploy, open **Site configuration → Identity** and click **Enable Identity**.
+5. Under **Identity → Services**, enable **Git Gateway**.
+6. Under **Identity → Registration**, choose **Invite only**, then **Invite users** and enter the admin's email address.
+7. The admin accepts the email invite, sets a password, and signs in at `https://<your-site>.netlify.app/admin/`.
+
+Saving in the admin commits to the `main` branch; Netlify and GitHub Pages redeploy automatically.
+
+> The `/admin` page only works on the Netlify URL. Opening it on the GitHub Pages domain will show the login screen but cannot authenticate. Update `site_url` / `display_url` in `admin/config.yml` if you later use a custom domain.
+
+If Netlify Identity is unavailable in your region or account, the alternative is Decap's GitHub backend with an OAuth proxy — the content files and admin collections stay the same.
+
+### Editing content manually
+
+You can still edit the JSON files in `content/` directly. Each section keeps the same shape the admin writes, and `assets/content.js` renders it into the page. Uploaded images go to `assets/images/uploads/`.
 
 ## Deploy
 

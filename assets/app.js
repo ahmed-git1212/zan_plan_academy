@@ -419,7 +419,7 @@
      -------------------------------------------------------------------------- */
   const enquiryForm = $('#enquiry-form');
   const enquiryNote = $('#enquiry-note');
-  const ADMISSIONS_EMAIL = 'zanplan26@gmail.com';
+  const ADMISSIONS_EMAIL = (window.ZPA_SETTINGS && window.ZPA_SETTINGS.email) || 'zanplan26@gmail.com';
 
   enquiryForm?.addEventListener('submit', (event) => {
     event.preventDefault();

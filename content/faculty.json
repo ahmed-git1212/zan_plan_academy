@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Dr. A. Hassan",
+      "initials": "AH",
+      "subject": "Physics",
+      "description": "Head of Sciences · Physics practicals and problem-solving",
+      "avatar": "a"
+    },
+    {
+      "name": "Ms. Z. Ali",
+      "initials": "ZA",
+      "subject": "Chemistry",
+      "description": "Advanced Chemistry · Laboratory skills and safe practice",
+      "avatar": "b"
+    },
+    {
+      "name": "Mr. M. Juma",
+      "initials": "MJ",
+      "subject": "Mathematics",
+      "description": "Advanced Mathematics · Pure maths and statistics",
+      "avatar": "c"
+    },
+    {
+      "name": "Ms. S. Omar",
+      "initials": "SO",
+      "subject": "Languages",
+      "description": "Languages & Humanities · Communication and critical reading",
+      "avatar": "d"
+    }
+  ]
+}

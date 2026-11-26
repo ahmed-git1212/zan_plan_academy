@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "image": "assets/images/gallery-students-group.jpg",
+      "title": "Form Five, 2026/2027",
+      "subtitle": "Students at ZPA",
+      "category": "Student Life",
+      "description": "Form Five students in front of the school vision and mission wall at Fuoni Migombani.",
+      "alt": "Form Five students standing in front of the school vision and mission wall"
+    },
+    {
+      "image": "assets/images/gallery-classroom.jpg",
+      "title": "In class",
+      "subtitle": "Teaching & learning",
+      "category": "Academics",
+      "description": "A teacher working through a lesson on the whiteboard while Form Five students follow along.",
+      "alt": "Teacher writing on a whiteboard during a Form Five lesson"
+    },
+    {
+      "image": "assets/images/gallery-campus-sign.jpg",
+      "title": "Our campus",
+      "subtitle": "Fuoni Migombani",
+      "category": "Campus",
+      "description": "The Zan Plan Academy signboard at Fuoni Migombani, P.O. Box 35.",
+      "alt": "Zan Plan Academy signboard at Fuoni Migombani"
+    },
+    {
+      "image": "assets/images/gallery-science-books.jpg",
+      "title": "Science textbooks",
+      "subtitle": "Physics · Chemistry · Biology",
+      "category": "Academics",
+      "description": "Form Five learners with their Chemistry, Biology and Physics textbooks.",
+      "alt": "Three students holding Chemistry, Biology and Physics textbooks"
+    },
+    {
+      "image": "assets/images/gallery-physics-practical.jpg",
+      "title": "Physics practical",
+      "subtitle": "Circuits & measurement",
+      "category": "Academics",
+      "description": "Students measuring voltage during an Advanced Physics practical session.",
+      "alt": "Teacher and two students working with a voltmeter in a Physics practical"
+    },
+    {
+      "image": "assets/images/gallery-computer-lab.jpg",
+      "title": "Computer lab",
+      "subtitle": "Digital skills",
+      "category": "Academics",
+      "description": "A learner working with a teacher in the computer lab.",
+      "alt": "Student and teacher at a computer in the school computer lab"
+    },
+    {
+      "image": "assets/images/gallery-faculty.jpg",
+      "title": "Our teachers",
+      "subtitle": "Faculty & mentors",
+      "category": "Campus",
+      "description": "Zan Plan Academy faculty members at the Fuoni Migombani campus.",
+      "alt": "Four Zan Plan Academy teachers standing together on campus"
+    },
+    {
+      "image": "assets/images/gallery-study.jpg",
+      "title": "Focused study",
+      "subtitle": "Form Five classroom",
+      "category": "Student Life",
+      "description": "Form Five students taking notes during a lesson.",
+      "alt": "Form Five students taking notes during a lesson"
+    },
+    {
+      "image": "assets/images/gallery-physics-students.jpg",
+      "title": "Practical work",
+      "subtitle": "Advanced Physics",
+      "category": "Academics",
+      "description": "Two students with their Physics apparatus during a laboratory session.",
+      "alt": "Two students with Physics laboratory apparatus"
+    }
+  ]
+}

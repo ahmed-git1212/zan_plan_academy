@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "code": "PCM",
+      "title": "Physics, Chemistry & Mathematics",
+      "icon": "atom",
+      "description": "The strongest base for engineering, medicine and technical degrees.",
+      "details": "PCM combines three rigorous subjects with strong mathematical reasoning. Learners study mechanics, fields and waves in Physics; organic, inorganic and physical Chemistry; and pure Mathematics with statistics — ideal preparation for engineering, medicine and research degrees.",
+      "careers": "Engineering, medicine, pharmacy, research, data science, aviation",
+      "subjects": "Physics · Chemistry · Mathematics",
+      "keywords": "pcm physics chemistry mathematics engineering mechanics calculus statistics technical science"
+    },
+    {
+      "code": "PCB",
+      "title": "Physics, Chemistry & Biology",
+      "icon": "flask",
+      "description": "A health and life-sciences pathway built on three advanced sciences.",
+      "details": "PCB focuses on the living world alongside physical science. Learners explore human biology, genetics and ecology, supported by Chemistry and Physics practicals, building a strong foundation for medicine, nursing, biomedical and environmental courses.",
+      "careers": "Medicine, nursing, biomedical science, agriculture, environmental health",
+      "subjects": "Physics · Chemistry · Biology",
+      "keywords": "pcb physics chemistry biology medicine nursing health life science laboratory"
+    },
+    {
+      "code": "CBG",
+      "title": "Chemistry, Biology & Geography",
+      "icon": "leaf",
+      "description": "Laboratory science combined with environment, place and fieldwork.",
+      "details": "CBG links laboratory science with the study of people and place. Chemistry and Biology practicals sit alongside physical and human Geography, with field observation, mapping and case studies of development.",
+      "careers": "Medicine, pharmacy, environmental management, agriculture, tourism, urban planning",
+      "subjects": "Chemistry · Biology · Geography",
+      "keywords": "cbg chemistry biology geography environment fieldwork health agriculture mapping"
+    },
+    {
+      "code": "PGM",
+      "title": "Physics, Geography & Mathematics",
+      "icon": "globe",
+      "description": "Measurement, modelling and a geographical view of the world.",
+      "details": "PGM suits learners who enjoy modelling, measurement and real-world problem solving. Physics and Mathematics develop analytical skill while Geography adds fieldwork, mapping and an understanding of environment and development.",
+      "careers": "Surveying, engineering, GIS, meteorology, urban planning, data analysis",
+      "subjects": "Physics · Geography · Mathematics",
+      "keywords": "pgm physics geography mathematics surveying gis meteorology engineering data"
+    }
+  ]
+}
