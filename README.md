@@ -85,13 +85,13 @@ If the phone number or email changes, update it in the contact cards and footer 
 
 ### Developer credit
 
-The footer includes a developer credit and support block:
+The footer includes a **Web Developer** column alongside Explore, Admissions and Find us:
 
-- Name: **Ahmed Omarali** — `Website by Ahmed Omarali` with a `DEVELOPER` tag
+- Name: **Ahmed Omarali**
 - Email: **ahmedomarali03@gmail.com**
 - Phone / WhatsApp: **+255 774 031 316** (`tel:+255774031316`, `https://wa.me/255774031316`)
 
-Update the `.footer-dev` block in `index.html` if these details change. The WhatsApp link includes a ready-to-send message.
+Update the `.footer-developer` column in `index.html` if these details change. The WhatsApp link includes a ready-to-send message. On tablets the footer switches to two columns and on very small phones (360px and below) the columns stack.
 
 ### Faculty, testimonials and news
 
