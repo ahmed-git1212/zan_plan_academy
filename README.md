@@ -41,7 +41,7 @@ assets/fonts/              Poppins body font
 - Animated stats bar
 - Four core pillars
 - About ZPA split section with Fuoni Migombani location card
-- Subject/stream category filters, live subject search, 12 programme cards and subject detail dialogs
+- Four Form Five combinations (PCM, PCB, CBG, PGM) with live search and combination-detail dialogs
 - Campus/learning banner
 - Faculty/mentor cards
 - Student and parent testimonials
@@ -84,15 +84,15 @@ The admission enquiry form also uses `ADMISSIONS_EMAIL` near the bottom of `asse
 
 Replace the names, roles, quotes, dates and text directly in `index.html`. The faculty avatars currently use initials and CSS gradients; swap in `<img>` elements when staff photographs are available.
 
-### Subject cards
+### Combination cards
 
-Each card in `#program-grid` carries:
+The `#program-grid` currently lists the four available Form Five combinations — **PCM**, **PCB**, **CBG** and **PGM**. Each card carries:
 
-- `data-category` — used by the filter pills (`Sciences`, `Arts`, `Business`, `Languages`)
-- `data-keywords` — extra search terms
-- `data-title`, `data-description`, `data-details`, `data-careers`, `data-combination` — used by the subject dialog
+- `data-category` — kept for future filtering
+- `data-keywords` — extra search terms (codes, subjects, careers)
+- `data-title`, `data-description`, `data-details`, `data-careers`, `data-combination` — used by the combination dialog
 
-Duplicate a card to add a subject. Update the displayed count in `#program-count` if you want the initial number to match; the search script recalculates it after filtering.
+Duplicate a card to add another combination. Update the number in `#program-count` (currently `4`) if you want the starting figure to match; the search script recalculates it whenever a search is active.
 
 ### Images
 
@@ -115,6 +115,18 @@ The admission requirements and steps are in `#admissions-dialog` in `index.html`
 - Social links are placeholders (`href="#"`).
 - The stats, testimonials and faculty profiles are presentational placeholders and should be replaced with verified ZPA information.
 - No tracking, analytics or external scripts are included.
+
+## Planned: admin page
+
+A future admin area should let the academy team update the site **without editing code**. Planned areas:
+
+- Add, edit or hide Form Five combinations (currently PCM, PCB, CBG and PGM)
+- Update admission requirements, dates and contact details
+- Publish news items and announcements
+- Edit faculty profiles and testimonials
+- Choose which images appear in the hero and About sections
+
+Until that exists, content changes are made directly in `index.html` and `assets/app.js` as described above.
 
 ## Deploy
 

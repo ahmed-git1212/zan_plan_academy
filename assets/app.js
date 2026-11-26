@@ -179,25 +179,19 @@
   const clearSearch = $('#clear-program-search');
   const programCount = $('#program-count');
   const programEmpty = $('#program-empty');
-  const filterButtons = $$('.filter-pill');
-  const filterLinks = $$('[data-filter-link]');
   const resetFilters = $('#reset-program-filters');
-  const state = { category: 'All', query: '' };
+  const state = { query: '' };
 
   function applyProgramFilters() {
     const query = state.query.trim().toLowerCase();
     let visible = 0;
 
     programCards.forEach((card) => {
-      const category = card.dataset.category || '';
       const haystack = [
         card.dataset.keywords || '',
-        category,
         card.textContent || '',
       ].join(' ').toLowerCase();
-      const categoryMatch = state.category === 'All' || category === state.category;
-      const queryMatch = !query || haystack.includes(query);
-      const show = categoryMatch && queryMatch;
+      const show = !query || haystack.includes(query);
       card.hidden = !show;
       if (show) visible += 1;
     });
@@ -205,30 +199,7 @@
     if (programCount) programCount.textContent = String(visible);
     if (programEmpty) programEmpty.hidden = visible !== 0;
     if (clearSearch) clearSearch.classList.toggle('is-visible', Boolean(query));
-    filterButtons.forEach((button) => {
-      const active = button.dataset.filter === state.category;
-      button.classList.toggle('is-active', active);
-      button.setAttribute('aria-pressed', String(active));
-    });
   }
-
-  function setCategory(category) {
-    state.category = category || 'All';
-    applyProgramFilters();
-  }
-
-  filterButtons.forEach((button) => {
-    button.addEventListener('click', () => setCategory(button.dataset.filter));
-  });
-
-  filterLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      setCategory(link.dataset.filterLink);
-      const academics = document.getElementById('academics');
-      if (academics) scrollToTarget(academics);
-    });
-  });
 
   programSearch?.addEventListener('input', () => {
     state.query = programSearch.value;
@@ -238,7 +209,6 @@
   heroSearchForm?.addEventListener('submit', (event) => {
     event.preventDefault();
     state.query = heroSearch?.value || '';
-    state.category = 'All';
     if (programSearch) programSearch.value = state.query;
     applyProgramFilters();
     const academics = document.getElementById('academics');
@@ -254,7 +224,6 @@
 
   resetFilters?.addEventListener('click', () => {
     state.query = '';
-    state.category = 'All';
     if (programSearch) programSearch.value = '';
     applyProgramFilters();
   });
