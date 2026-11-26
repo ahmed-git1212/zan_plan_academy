@@ -8,7 +8,7 @@ display_url: https://ahmed-git1212.github.io/zan_plan_academy/
 logo_url: https://ahmed-git1212.github.io/zan_plan_academy/assets/images/zpa-logo.png
 
 media_folder: "assets/images/uploads"
-public_folder: "/assets/images/uploads"
+public_folder: "assets/images/uploads"
 
 collections:
   - name: settings
