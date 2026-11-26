@@ -8,6 +8,10 @@ A responsive, static education website for **Zan Plan Academy (ZPA)**.
 
 The layout follows the section flow of the supplied reference recording while using the ZPA crest, student photography and an original warm cream / brown / gold visual system.
 
+## Resume / project status
+
+See [PROJECT-STATUS.md](PROJECT-STATUS.md) for the current state, what is finished, what remains (Netlify admin activation) and a ready-to-paste resume message.
+
 ## Run locally
 
 No build step or dependencies are required.
