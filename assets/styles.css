@@ -536,7 +536,6 @@ p { margin-bottom: 0; }
 .footer-column a:hover, .footer-link:hover { color: var(--cream); }
 .footer-contact p { display: flex; align-items: flex-start; gap: 0.4rem; color: rgba(251, 244, 231, 0.65); font-size: 0.72rem; line-height: 1.65; }
 .footer-contact .icon { margin-top: 0.18rem; color: var(--gold-light); }
-.footer-developer-name { margin: 0 0 0.15rem; color: var(--cream); font-size: 0.76rem; font-weight: 600; }
 .footer-developer a { display: inline-flex; align-items: center; gap: 0.4rem; overflow-wrap: break-word; font-size: 0.68rem; }
 .footer-developer .icon { flex: none; color: var(--gold-light); }
 .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; border-top: 1px solid rgba(251, 244, 231, 0.12); padding-block: 1.2rem; color: rgba(251, 244, 231, 0.42); font-size: 0.65rem; }

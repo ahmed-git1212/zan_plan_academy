@@ -87,7 +87,6 @@ If the phone number or email changes, update it in the contact cards and footer 
 
 The footer includes a **Web Developer** column alongside Explore, Admissions and Find us:
 
-- Name: **Ahmed Omarali**
 - Email: **ahmedomarali03@gmail.com**
 - Phone / WhatsApp: **+255 774 031 316** (`tel:+255774031316`, `https://wa.me/255774031316`)
 
