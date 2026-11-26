@@ -26,7 +26,7 @@
   const header = $('#site-header');
   const backToTop = $('#back-to-top');
   const navLinks = $$('[data-nav]');
-  const navSections = ['home', 'about', 'academics', 'form-five', 'admissions', 'news', 'contact']
+  const navSections = ['home', 'about', 'academics', 'form-five', 'admissions', 'news', 'gallery', 'contact']
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 
@@ -320,6 +320,24 @@
       newsDialogTitle.textContent = button.dataset.title || 'Update';
       newsDialogBody.textContent = button.dataset.body || '';
       openDialog(newsDialog, button);
+    });
+  });
+
+  /* Gallery lightbox */
+  const galleryDialog = $('#gallery-dialog');
+  const galleryImage = $('#gallery-image');
+  const galleryTitle = $('#gallery-title');
+  const galleryCaption = $('#gallery-caption');
+
+  $$('[data-gallery-src]').forEach((item) => {
+    item.addEventListener('click', () => {
+      if (!galleryDialog) return;
+      const source = item.querySelector('img');
+      galleryImage.src = item.dataset.gallerySrc;
+      galleryImage.alt = source ? source.alt : '';
+      galleryTitle.textContent = item.dataset.galleryTitle || 'Campus photo';
+      galleryCaption.textContent = item.dataset.galleryCaption || '';
+      openDialog(galleryDialog, item);
     });
   });
 

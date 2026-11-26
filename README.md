@@ -29,13 +29,14 @@ assets/styles.css          Design tokens, layout, components and responsive rule
 assets/app.js              Mobile menu, search/filter, dialogs and scroll behaviour
 assets/images/zpa-logo.png ZPA circular crest (transparent)
 assets/images/students-hero.jpg / students-academic.jpg
+assets/images/gallery-*.jpg  Gallery photos (duo, books, female, male, crest)
 assets/images/favicon.png
 assets/fonts/              Poppins body font
 ```
 
 ## What is included
 
-- Sticky header with Home, About, Academics, Form Five, Admissions, News and Contact navigation
+- Sticky header with Home, About, Academics, Form Five, Admissions, News, Gallery and Contact navigation
 - Mobile off-canvas menu with keyboard/Escape support
 - Hero with the 2026/2027 Form Five message, interactive subject search, student photo and programme badge
 - Animated stats bar
@@ -46,6 +47,7 @@ assets/fonts/              Poppins body font
 - Faculty/mentor cards
 - Student and parent testimonials
 - News/announcement cards with update dialogs
+- Campus gallery between News and Admissions, with a photo lightbox
 - Admissions CTA and admission-information dialog
 - Contact cards and complete footer
 - Print-friendly, reduced-motion-friendly and keyboard-accessible interactions
@@ -101,9 +103,21 @@ The supplied ZPA crest and student photographs are in `assets/images/`. The cres
 - `zpa-logo.png` for the crest
 - `students-hero.jpg` for the hero photo. On phones (760px and below) this image is also used as the hero background behind the headline, so the students are visible without scrolling; at wider sizes it shows inside the framed hero card.
 - `students-academic.jpg` for the About and campus sections
+- `gallery-duo.jpg`, `gallery-books.jpg`, `gallery-female.jpg`, `gallery-male.jpg` for the gallery tiles
+- `gallery-crest.jpg` for the close-up crest image (available if you want to add a fifth tile)
 - `favicon.png` for the browser icon
 
 Keep the same file names to avoid changing the HTML.
+
+### Gallery
+
+The gallery sits between **News** and **Admissions** (`#gallery`). Each tile is a `<button>` in `.gallery-grid` with:
+
+- an `<img>` for the thumbnail
+- `data-gallery-src` — the photo opened in the lightbox
+- `data-gallery-title` and `data-gallery-caption` — the lightbox heading and description
+
+The first tile spans two columns and two rows; the second spans two columns. To add a photo, duplicate a tile and keep the same pattern (the grid flows into further rows automatically).
 
 ### Admission dialog
 

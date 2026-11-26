@@ -80,6 +80,7 @@
         <a href="#form-five" data-nav="form-five">Form Five</a>
         <a href="#admissions" data-nav="admissions">Admissions</a>
         <a href="#news" data-nav="news">News</a>
+        <a href="#gallery" data-nav="gallery">Gallery</a>
         <a href="#contact" data-nav="contact">Contact</a>
       </nav>
 
@@ -112,6 +113,7 @@
       <a href="#form-five">Form Five</a>
       <a href="#admissions">Admissions</a>
       <a href="#news">News</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="mobile-menu-foot">
@@ -482,6 +484,38 @@
       </div>
     </section>
 
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading gallery-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Campus gallery</p>
+          <h2>Life at ZPA, <br><span>in pictures.</span></h2>
+          <p>Moments from the classroom, the laboratory and campus life at Fuoni Migombani. Tap any photo to view it larger.</p>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-duo.jpg" data-gallery-title="Form Five, 2026/2027" data-gallery-caption="Form Five students at the Fuoni Migombani campus, ready for the new academic year." aria-label="View larger photo: Form Five students 2026/2027">
+            <img src="assets/images/gallery-duo.jpg" alt="Two Zan Plan Academy students holding Physics Advanced and Chemistry Advanced books" width="900" height="783" loading="lazy">
+            <span class="gallery-caption"><strong>Form Five, 2026/2027</strong><small>Fuoni Migombani campus</small></span>
+          </button>
+
+          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-books.jpg" data-gallery-title="Advanced Physics &amp; Chemistry" data-gallery-caption="Science stream textbooks used by Form Five learners in the advanced science combinations." aria-label="View larger photo: Advanced Physics and Chemistry books">
+            <img src="assets/images/gallery-books.jpg" alt="Close-up of Physics Advanced and Chemistry Advanced textbooks held by students" width="1000" height="395" loading="lazy">
+            <span class="gallery-caption"><strong>Advanced Physics &amp; Chemistry</strong><small>Science stream</small></span>
+          </button>
+
+          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-female.jpg" data-gallery-title="A-Level readiness" data-gallery-caption="A Form Five learner with her Physics Advanced textbook, ready for the science stream." aria-label="View larger photo: Form Five student with Physics book">
+            <img src="assets/images/gallery-female.jpg" alt="Zan Plan Academy student holding a Physics Advanced textbook" width="700" height="1317" loading="lazy">
+            <span class="gallery-caption"><strong>A-Level readiness</strong><small>Physics · PCM</small></span>
+          </button>
+
+          <button class="gallery-item" type="button" data-gallery-src="assets/images/gallery-male.jpg" data-gallery-title="The future is bright" data-gallery-caption="A Form Five learner in ZPA uniform, preparing for the advanced science programme." aria-label="View larger photo: Form Five student in ZPA uniform">
+            <img src="assets/images/gallery-male.jpg" alt="Zan Plan Academy student in school uniform holding a Chemistry Advanced textbook" width="700" height="1406" loading="lazy">
+            <span class="gallery-caption"><strong>The future is bright</strong><small>Chemistry · PCB</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section class="admissions-cta" id="admissions">
       <div class="container admissions-inner reveal">
         <div class="admissions-copy">
@@ -556,6 +590,7 @@
         <a href="#academics">Academics</a>
         <a href="#form-five">Form Five</a>
         <a href="#news">News</a>
+        <a href="#gallery">Gallery</a>
       </div>
       <div class="footer-column">
         <h2>Admissions</h2>
@@ -643,6 +678,20 @@
         <p class="form-help">This opens your email app with the enquiry ready to send. You can also call the admissions office directly using the contact details on this page.</p>
       </form>
     </div>
+  </dialog>
+
+  <dialog class="modal modal-gallery" id="gallery-dialog" aria-labelledby="gallery-title">
+    <div class="gallery-dialog-head">
+      <div>
+        <p class="eyebrow">Campus gallery</p>
+        <h2 id="gallery-title">Campus photo</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-dialog aria-label="Close photo">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+    <img id="gallery-image" src="assets/images/gallery-duo.jpg" alt="">
+    <p class="gallery-dialog-text" id="gallery-caption"></p>
   </dialog>
 
   <dialog class="modal" id="program-dialog" aria-labelledby="program-dialog-title">
